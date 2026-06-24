@@ -2,10 +2,10 @@ export default class Rules {
         
         static provisions = {
             NAME: {
-            type: "string",
-            min: 3,
-            max: 80,
-            regex: /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'-]+$/
+                type: "string",
+                min: 3,
+                max: 80,
+                regex: /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'-]+$/
             },
             LAST_NAME: {
                 type: "string",
@@ -30,6 +30,6 @@ export default class Rules {
                 min: 0,
                 max: 30,
                 integer: true
-}
+            }
         }
 }
