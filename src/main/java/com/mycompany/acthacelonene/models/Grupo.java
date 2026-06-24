@@ -1,13 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.acthacelonene.models;
 
-/**
- *
- * @author Admin
- */
-public class Grupo {
+import com.mycompany.acthacelonene.utils.Identifiable;
+
+public class Grupo implements Identifiable{
+    
+    private Long idGrupo;
+    private String nombre;
+
+    public Grupo() {
+    }
+
+    public Grupo(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Grupo(Long idGrupo, String nombre) {
+        this.idGrupo = idGrupo;
+        this.nombre = nombre;
+    }
+@Override
+    public Long getId() {
+        return idGrupo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+@Override
+    public void setId(Long idGrupo) {
+        this.idGrupo = idGrupo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+    
     
 }
